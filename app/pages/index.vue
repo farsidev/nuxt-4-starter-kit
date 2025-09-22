@@ -1,9 +1,9 @@
 <template>
   <div>
     <!-- Hero Section -->
-    <section class="text-center py-12">
-      <h1 class="text-4xl font-bold tracking-tight mb-4">Nuxt 4 Starter Kit</h1>
-      <p class="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
+    <section class="py-12 text-center">
+      <h1 class="mb-4 text-4xl font-bold tracking-tight">Nuxt 4 Starter Kit</h1>
+      <p class="mx-auto mb-8 max-w-2xl text-xl text-muted-foreground">
         A production-grade starter kit with TypeScript, Tailwind CSS v4, and
         modern tooling
       </p>
@@ -20,23 +20,23 @@
     </section>
 
     <!-- Demo Cards -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
+    <div class="grid grid-cols-1 gap-6 mt-12 md:grid-cols-2 lg:grid-cols-3">
       <!-- Icons Demo -->
-      <div class="bg-card border border-border rounded-lg p-6">
-        <h3 class="text-lg font-semibold mb-4 flex items-center gap-2">
+      <div class="p-6 rounded-lg border bg-card border-border">
+        <h3 class="flex gap-2 items-center mb-4 text-lg font-semibold">
           <Icon name="mdi:palette" class="text-primary" />
           Icons
         </h3>
         <div class="space-y-3">
-          <div class="flex items-center gap-3">
+          <div class="flex gap-3 items-center">
             <Icon name="mdi:home" size="20" class="text-primary" />
             <span class="text-sm">Iconify Icon</span>
           </div>
-          <div class="flex items-center gap-3">
+          <div class="flex gap-3 items-center">
             <Icon name="logos:nuxt-icon" size="20" class="text-primary" />
             <span class="text-sm">Nuxt Logo</span>
           </div>
-          <div class="flex items-center gap-3">
+          <div class="flex gap-3 items-center">
             <Icon name="mdi:heart" size="20" class="text-red-500" />
             <span class="text-sm">Colored Icon</span>
           </div>
@@ -44,8 +44,8 @@
       </div>
 
       <!-- Images Demo -->
-      <div class="bg-card border border-border rounded-lg p-6">
-        <h3 class="text-lg font-semibold mb-4 flex items-center gap-2">
+      <div class="p-6 rounded-lg border bg-card border-border">
+        <h3 class="flex gap-2 items-center mb-4 text-lg font-semibold">
           <Icon name="mdi:image" class="text-primary" />
           Images
         </h3>
@@ -58,7 +58,7 @@
               height="40"
               class="mx-auto"
             />
-            <p class="text-xs text-muted-foreground text-center mt-2">
+            <p class="mt-2 text-xs text-center text-muted-foreground">
               Local Image
             </p>
           </div>
@@ -71,7 +71,7 @@
               class="mx-auto rounded"
               sizes="sm:200px md:300px lg:400px"
             />
-            <p class="text-xs text-muted-foreground text-center mt-2">
+            <p class="mt-2 text-xs text-center text-muted-foreground">
               Remote Image
             </p>
           </div>
@@ -79,8 +79,8 @@
       </div>
 
       <!-- Tailwind Variants Demo -->
-      <div class="bg-card border border-border rounded-lg p-6">
-        <h3 class="text-lg font-semibold mb-4 flex items-center gap-2">
+      <div class="p-6 rounded-lg border bg-card border-border">
+        <h3 class="flex gap-2 items-center mb-4 text-lg font-semibold">
           <Icon name="mdi:palette-advanced" class="text-primary" />
           Components
         </h3>
@@ -102,8 +102,8 @@
       </div>
 
       <!-- VueUse Demo -->
-      <div class="bg-card border border-border rounded-lg p-6">
-        <h3 class="text-lg font-semibold mb-4 flex items-center gap-2">
+      <div class="p-6 rounded-lg border bg-card border-border">
+        <h3 class="flex gap-2 items-center mb-4 text-lg font-semibold">
           <Icon name="mdi:mouse" class="text-primary" />
           VueUse
         </h3>
@@ -128,14 +128,14 @@
       </div>
 
       <!-- Performance Demo -->
-      <div class="bg-card border border-border rounded-lg p-6">
-        <h3 class="text-lg font-semibold mb-4 flex items-center gap-2">
+      <div class="p-6 rounded-lg border bg-card border-border">
+        <h3 class="flex gap-2 items-center mb-4 text-lg font-semibold">
           <Icon name="mdi:speedometer" class="text-primary" />
           Performance
         </h3>
         <div class="space-y-3">
           <div>
-            <h4 class="font-semibold text-sm mb-1">Build Tools</h4>
+            <h4 class="mb-1 text-sm font-semibold">Build Tools</h4>
             <div class="space-y-1">
               <Badge variant="info" size="sm">Vite</Badge>
               <Badge variant="info" size="sm">TypeScript</Badge>
@@ -144,7 +144,7 @@
             </div>
           </div>
           <div>
-            <h4 class="font-semibold text-sm mb-1">Pre-commit Hooks</h4>
+            <h4 class="mb-1 text-sm font-semibold">Pre-commit Hooks</h4>
             <div class="space-y-1">
               <Badge variant="success" size="sm">Husky</Badge>
               <Badge variant="success" size="sm">lint-staged</Badge>
@@ -154,18 +154,18 @@
       </div>
 
       <!-- Health Check -->
-      <div class="bg-card border border-border rounded-lg p-6">
-        <h3 class="text-lg font-semibold mb-4 flex items-center gap-2">
+      <div class="p-6 rounded-lg border bg-card border-border">
+        <h3 class="flex gap-2 items-center mb-4 text-lg font-semibold">
           <Icon name="mdi:heart-pulse" class="text-primary" />
           Health Check
         </h3>
         <div class="space-y-3">
           <div>
-            <h4 class="font-semibold text-sm mb-1">Server Status</h4>
+            <h4 class="mb-1 text-sm font-semibold">Server Status</h4>
             <Badge variant="success" size="sm">Running</Badge>
           </div>
           <div>
-            <h4 class="font-semibold text-sm mb-1">API Endpoint</h4>
+            <h4 class="mb-1 text-sm font-semibold">API Endpoint</h4>
             <NuxtLink
               to="/api/health"
               class="text-sm text-primary hover:underline"
@@ -180,6 +180,11 @@
 </template>
 
 <script setup lang="ts">
+// Home page using default layout
+definePageMeta({
+  layout: "default",
+});
+
 // VueUse composables (auto-imported)
 const { x: mouseX, y: mouseY } = useMouse();
 const isOnline = useOnline();
